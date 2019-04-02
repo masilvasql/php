@@ -1,5 +1,5 @@
 <?php
-    $conn = new PDO("mysql:dbname=dbphp7;host=localhost","root","",null);
+    $conn = new PDO("sqlsrv:Database=dbphp7;server=DESKTOP-68BB4S0\SQLEXPRESS;ConnectionPooling=0","usuarioteste","123456",null);
 
     $stmt = $conn->prepare("SELECT * FROM tb_usuarios");
 
@@ -14,7 +14,4 @@
             echo "==================================================== <br>";
     }
 
-    // var_dump($results);
-
-    
 ?>
