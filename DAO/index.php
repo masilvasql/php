@@ -15,10 +15,15 @@
     // $usu->login('masilva','12345');
     // echo $usu;
 
-    $aluno = new Usuario("aluno 2", "aluno 3");
+    // $aluno = new Usuario("aluno 2", "aluno 3");
 
-    $aluno->insert();
+    // $aluno->insert();
 
-    echo $aluno;
+    // echo $aluno;
+
+    $usu = new Usuario();
+    $usu->loadById(1);
+    $usu->update('masilva25','1234');
+    echo $usu;
     
 ?>
