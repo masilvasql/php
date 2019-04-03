@@ -11,8 +11,14 @@
     // $busca = Usuario::search('mas');
     // echo json_encode($busca);
 
-    $usu = new Usuario();
-    $usu->login('masilva','12345');
-    echo $usu;
+    // $usu = new Usuario();
+    // $usu->login('masilva','12345');
+    // echo $usu;
+
+    $aluno = new Usuario("aluno 2", "aluno 3");
+
+    $aluno->insert();
+
+    echo $aluno;
     
 ?>
