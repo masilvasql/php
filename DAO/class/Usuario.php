@@ -111,6 +111,17 @@
             ));
         }
 
+        public function delete(){
+            $sql = new Sql();
+            $sql->query("DELETE FROM tb_usuarios WHERE idusuario = :ID",array(
+                ":ID"=>$this->getIdUsuario()
+            ));
+            $this->setIdUsuario(null);
+            $this->setDesLogin(null);
+            $this->setDesSenha(null);
+            $this->setDtcadastro(null);
+        }
+
 
         public function __construct($login = '', $senha = ''){
             $this->setDesLogin($login);

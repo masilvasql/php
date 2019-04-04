@@ -21,9 +21,14 @@
 
     // echo $aluno;
 
+    // $usu = new Usuario();
+    // $usu->loadById(1);
+    // $usu->update('masilva25','1234');
+    // echo $usu;
+
     $usu = new Usuario();
-    $usu->loadById(1);
-    $usu->update('masilva25','1234');
-    echo $usu;
+    $usu->loadById(8);
+    $usu->delete();
+    // echo $usu;
     
 ?>
