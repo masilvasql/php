@@ -12,7 +12,8 @@
 
     header("Content-type: image/jpeg");
 
-    imagejpeg($image,"certificado".date('Y-m-d').'.jpeg',100);
+  //  imagejpeg($image,"certificado".date('Y-m-d').'.jpeg',100);
+  imagejpeg($image);
     imagedestroy($image);
 
     
