@@ -1,0 +1,15 @@
+{
+    "name": "masilva/composer",
+    "description": "Aula de php7",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Marcelo Abrão da Silva",
+            "email": "masilvasql@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "monolog/monolog":"1.0.*"
+    }
+}
